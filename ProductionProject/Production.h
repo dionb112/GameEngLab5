@@ -1,5 +1,7 @@
 #include <iostream>
+#include <vector>
+
 class Production{
 public:
-	int* someMethod(int a);
+	std::vector<int> someMethod(std::vector<int> a);
 };

@@ -1,13 +1,13 @@
 #include "Production.h"
 
-int* Production::someMethod(int a)
+std::vector<int> Production::someMethod(std::vector<int> a)
 {
-	int myArray[6] = { 0, -1, -2, -3, -4, -5 };
+	std::vector<int> myVector = { 0, -1, -2, -3, -4, -5 };
 	for (int i = 0; i < 6; i++) {
-		while (myArray[i] < 1 || myArray[i] > 46) {
+		while (myVector[i] < 1 || myVector[i] > 46) {
 			std::cout << "Enter " << 6 - i << " numbers, each between 1 and 46" << std::endl;
-			std::cin >> myArray[i];
+			std::cin >> myVector[i];
 		}
 	}
-	return myArray;
+	return myVector;
 }

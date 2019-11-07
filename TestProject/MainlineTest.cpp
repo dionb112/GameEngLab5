@@ -9,10 +9,9 @@ int main()
 {
 	Production p;
 
-	int a = 10;
+	std::vector<int> a = { 10, -1, 0, 1, 2, 3 };
 
-	//cout << p.someMethod(a) << endl;
-	//assert(p.someMethod(a) == 0);
-	//assert(p.someMethod(a) == 1);
+	cout << p.someMethod(a).size() << endl;
+	assert(p.someMethod(a).size() == a.size());
 	cin.get();
 }
